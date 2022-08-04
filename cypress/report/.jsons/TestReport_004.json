@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-03T08:38:32.176Z",
+    "end": "2022-08-03T08:39:00.104Z",
+    "duration": 27928,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cf0045f0-ad03-45ee-b1f5-74104dfe0719",
+      "title": "",
+      "fullFile": "cypress/e2e/component/systemTest.js",
+      "file": "cypress/e2e/component/systemTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0d373f79-a507-4c96-a7bb-4b0fcef8f358",
+          "title": "These are component tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test to verify that the menu item Women is displayed",
+              "fullTitle": "These are component tests Test to verify that the menu item Women is displayed",
+              "timedOut": null,
+              "duration": 27771,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[title=\"Women\"]').should('be.visible').and('have.text', 'Women');\ncy.get('a[title=\"Women\"]').trigger('mouseover');\ncy.get('a[title=\"Women\"]').should('have.css', 'display', 'block');",
+              "err": {},
+              "uuid": "82d60688-b39e-4228-9151-3b9108fe0d22",
+              "parentUUID": "0d373f79-a507-4c96-a7bb-4b0fcef8f358",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "82d60688-b39e-4228-9151-3b9108fe0d22"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 27771,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "TestReport",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/.jsons",
+        "charts": true,
+        "embeddedScreenshots": true,
+        "reportPageTitle": "Test-Report",
+        "reportFilename": "TestReport",
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

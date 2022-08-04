@@ -1,0 +1,29 @@
+{
+  "TestDescription":"E2E Tests",
+  "Test1":
+  {
+    "Step1": {
+    "Description":"Verify that the category for Summer Dresses exists and then click on the menu",
+    "DressType":"Summer Dresses",
+    "PaheHeader":"Summer Dresses"
+    },
+    "Step2": {
+      "Description":"Clicks and Verifies All specials button",
+      "DressType":"All specials",
+      "PaheHeader":"Price drop"
+    }
+  },
+  "Test2":
+  {
+    "Step1": {
+    "Description":"Verify another E2E Test",
+    "DressType":"Casual Dresses",
+    "PaheHeader":"Casual Dresses"
+    },
+    "Step2": {
+      "Description":"Clicks and Verifies All specials button",
+      "DressType":"All specials",
+      "PaheHeader":"Price drop"
+    } 
+  }
+}
