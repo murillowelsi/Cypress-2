@@ -75,9 +75,12 @@ it('Verify the first product, choose qty, size, color and adds product to cart',
       .siblings().eq(1)
       .should('have.text','Color : '+productOptions.color+', Size : '+productOptions.size)
 
+    //Takes a screenshot of the cart
+    cy.screenshot()
+
     //Proceed to checkout : verifies the button text and clicks on it
-    cy.get('[data-layer="Content"]')
-      .should('have.text','Proceed to checkout')
+    cy.get('.standard-checkout')
+      .should('contain.text','Proceed to checkout')
       .click()
     })
 
