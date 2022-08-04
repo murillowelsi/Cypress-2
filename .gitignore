@@ -8,6 +8,8 @@ node_modules/
 cypress.env.json
 cypress/report
 cypress/screenshots
+cypress/e2e/endToend/Cypress.code-workspace
+.gitignore
 
 # Compiled Java class files
 *.class
@@ -50,3 +52,4 @@ Thumbs.db
 *.mov
 *.wmv
 
+.gitignore
