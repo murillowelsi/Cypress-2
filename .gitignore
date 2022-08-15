@@ -4,7 +4,8 @@
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
 # Node artifact files
-node_modules/
+Cypress/node_modules
+
 cypress.env.json
 cypress/report
 cypress/screenshots
