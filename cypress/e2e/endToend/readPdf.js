@@ -5,7 +5,7 @@ it('downloads a simple PDF file', () => {
   
     cy.contains('Download')
       .click()
-    cy.log('this is pdf read test')
+    cy.log('PDF Read')
     cy.readFile('cypress/downloads/simple.pdf', 'utf8')
     cy.task('readPdf', 'cypress/downloads/simple.pdf')
   
