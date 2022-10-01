@@ -44,3 +44,21 @@ Cypress.Commands.add('isInViewPort', element => {
   
     })
   })
+
+  //Command to create a fixture file 
+  Cypress.Commands.add('generateFixture', () => {
+    const faker = require('@faker-js/faker')
+    cy.writeFile('cypress/fixtures/play.json', {
+      'hits':Cypress._.times(20, () => {
+        return {
+          'title':`${faker.lorem.words(3)}`,
+          'url':`${faker.internet.url()}`,
+          'author':`${faker.name.firstName()} ${faker.name.lastName()}`,
+          'num_comments':`${faker.datatype.number()}`,
+          'points':`${faker.datatype.number()}`,
+          'objectID':`${faker.datatype.uuid()}`,
+        }
+      })
+    })
+  })
+  

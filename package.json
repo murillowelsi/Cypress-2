@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "name": "cypress",
   "version": "1.0.0",
   "description": "Cypress tests",
@@ -18,7 +17,10 @@
   "author": "Sam Nittala",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^10.3.1",
+    "cypress": "^10.9.0",
     "cypress-mochawesome-reporter": "^3.2.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.5.0"
   }
 }
