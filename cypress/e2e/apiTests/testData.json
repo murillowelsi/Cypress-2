@@ -1,0 +1,74 @@
+[
+    {
+      "TestCase": "Verify that a valid error message & status code are displayed when the length of the name attribute exceeds 20 characters",
+      "guid": "edb148c4-1898-43da-85f4-b4bbf413c621",
+      "isActive": true,
+      "balance": "$1,763.00",
+      "picture": "http://placehold.it/32x32",
+      "age": 22,
+      "name": "Rivera Vargas",
+      "email": "riveravargas@tropolis.com",
+      "phone": "+1 (939) 456-3422",
+      "address": "463 Bragg Court, Hollins, Florida, 7376"
+    },
+    {
+        "TestCase": "Verify 2",
+        "guid": "e8183c50-7723-46d1-b823-62742a86ba74",
+      "isActive": false,
+      "balance": "$1,554.18",
+      "picture": "http://placehold.it/32x32",
+      "age": 32,
+      "name": "Geraldine Hebert",
+      "email": "geraldinehebert@tropolis.com",
+      "phone": "+1 (934) 529-3498",
+      "address": "858 Homecrest Avenue, Charco, Michigan, 2630"
+    },
+    {
+      "TestCase": "Verify 3",
+      "guid": "59152946-66f1-4d7b-bb1c-d267e6ed82df",
+      "isActive": false,
+      "balance": "$1,132.13",
+      "picture": "http://placehold.it/32x32",
+      "age": 27,
+      "name": "Ginger Sharp",
+      "email": "gingersharp@tropolis.com",
+      "phone": "+1 (990) 523-2576",
+      "address": "133 Hanson Place, Wanamie, Alaska, 3543"
+    },
+    {
+        "TestCase": "Verify 4",
+      "guid": "ec8f7881-40ea-4e34-b004-ffd2cd4fd48d",
+      "isActive": true,
+      "balance": "$2,126.17",
+      "picture": "http://placehold.it/32x32",
+      "age": 40,
+      "name": "Chan Maddox",
+      "email": "chanmaddox@tropolis.com",
+      "phone": "+1 (999) 408-3366",
+      "address": "631 Chester Avenue, Tonopah, Indiana, 1038"
+    },
+    {
+        "TestCase": "Verify 5",
+      "guid": "5190f111-5788-4dd5-be12-1ce8937c7d12",
+      "isActive": false,
+      "balance": "$2,860.61",
+      "picture": "http://placehold.it/32x32",
+      "age": 38,
+      "name": "Herrera Edwards",
+      "email": "herreraedwards@tropolis.com",
+      "phone": "+1 (965) 513-2606",
+      "address": "606 Wortman Avenue, Valmy, Oklahoma, 3726"
+    },
+    {
+        "TestCase": "Verify 6",
+      "guid": "4739eae3-41f5-46af-a420-57933791f632",
+      "isActive": true,
+      "balance": "$2,105.95",
+      "picture": "http://placehold.it/32x32",
+      "age": 30,
+      "name": "Macdonald Walton",
+      "email": "macdonaldwalton@tropolis.com",
+      "phone": "+1 (938) 583-2193",
+      "address": "318 Louisiana Avenue, Indio, Missouri, 9186"
+    }
+  ]
