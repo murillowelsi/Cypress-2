@@ -4,12 +4,13 @@
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
 # Node artifact files
-Cypress/node_modules
+node_modules/
 
 cypress.env.json
 cypress/report
 cypress/screenshots
 cypress/e2e/endToend/Cypress.code-workspace
+Reference.txt
 .gitignore
 
 # Compiled Java class files
