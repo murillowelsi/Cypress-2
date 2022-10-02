@@ -1,6 +1,5 @@
 const { defineConfig } = require("cypress")
 
-
 module.exports = defineConfig({
   chromeWebSecurity: false,
   includeShadowDom: true,
@@ -11,8 +10,6 @@ module.exports = defineConfig({
   hideXHR: false,
   failOnStatusCode: false,
   video: false,
-  width: 1920,
-  height: 1080,
   retries: {
     runMode: 1,
     openMode: 0,

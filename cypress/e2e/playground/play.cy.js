@@ -1,27 +1,65 @@
-
-const uuid = () => Cypress._.random(0, 1e10)
-describe('Schema validation Tests', () => {
-
-  beforeEach(() => {
+ describe('Some Tests', () => {
+  before(() => {
+      // runs once before all tests
     cy.generateFixture()
   })
+  
+const testdata = require('../../fixtures/play.json')
 
-  it('Test', () => {
-  cy.log('test')
-  })
-  //   const testdata = require('../../fixtures/play.json')
-  //   testdata.forEach((data) => {
+  testdata.hits.forEach((data) => {
+    it(`${data.objectId}`, () => {
+        cy.log(JSON.stringify(data))
+    })
+  }) 
+})   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // describe('Hacker Stories', () => {
+  //   before(() => {
+  //     // runs once before all tests
+  //     cy.generateFixture()
+  //   })
+    
+  //   let testdata = '../../fixtures/play.json'
+  //   testdata.hits.forEach((data) => {
   //   it(`${data.objectID}`, () => {
-  //       // const id = uuid()
-  //       // data.guid = id
-  //       cy.log(data.objectID)
-             
-  //   })
-  // })
-  // testdata.forEach((data) => {
-  //   it(`${data.TestCase}`, () => {
   //       cy.log(JSON.stringify(data))
-             
   //   })
   // })
-})
+
+/* WORKS but if one of the object fails while sending to the api it wont probaly try the rest of them */
+
+// it('Tests', () => {
+//     cy
+//     .fixture('play')
+//     .then((list) => {
+//       // cy.log(JSON.stringify(list.hits))
+//       list.hits.forEach((item) => {
+//         cy.log(JSON.stringify(item))
+//         })
+//     })
+// })

@@ -30,33 +30,36 @@ Cypress.Commands.add("Login",(username, password) =>
     cy.get('[data-test="login-button"]').as("btnLogin").click()       
 })
 
-Cypress.Commands.add('isInViewPort', element => {
-    cy.get(element).then($el => {
+// Cypress.Commands.add('isInViewPort', element => {
+//     cy.get(element).then($el => {
   
-      const bottom = Cypress.$(cy.state("window")).height();
-      const rect = $el[0].getBoundingClientRect();
+//       const bottom = Cypress.$(cy.state("window")).height();
+//       const rect = $el[0].getBoundingClientRect();
   
-      expect(rect.top).to.be.least(0)
-      expect(rect.bottom).to.be.greaterThan(0);
-      expect(rect.top).to.be.lessThan(bottom);
-      expect(rect.bottom).to.be.lessThan(bottom);
+//       expect(rect.top).to.be.least(0)
+//       expect(rect.bottom).to.be.greaterThan(0);
+//       expect(rect.top).to.be.lessThan(bottom);
+//       expect(rect.bottom).to.be.lessThan(bottom);
   
   
-    })
-  })
+//     })
+//   })
 
   //Command to create a fixture file 
   Cypress.Commands.add('generateFixture', () => {
-    const faker = require('@faker-js/faker')
+    const { faker } = require('@faker-js/faker')
     cy.writeFile('cypress/fixtures/play.json', {
-      'hits':Cypress._.times(20, () => {
+      "hits":Cypress._.times(20, () => {
         return {
-          'title':`${faker.lorem.words(3)}`,
+          'objectId':`${faker.datatype.uuid()}`,
+          'exists':`${faker.datatype.boolean()}`,
+          'message':{
+          'title':`${faker.lorem.words()}`,
           'url':`${faker.internet.url()}`,
           'author':`${faker.name.firstName()} ${faker.name.lastName()}`,
           'num_comments':`${faker.datatype.number()}`,
           'points':`${faker.datatype.number()}`,
-          'objectID':`${faker.datatype.uuid()}`,
+          }
         }
       })
     })
